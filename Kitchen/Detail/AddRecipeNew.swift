@@ -60,7 +60,7 @@ struct AddRecipeNew: View {
                             .labelStyle(.iconOnly)
                     }
                 }
-                ToolbarItem(){
+                ToolbarItem{
                     NavigationLink(isActive: $navigateToRecipe){
                         RecipeDetail(recipe: recipsVM.recipes.sorted{$0.datePublished > $1.datePublished}[0])
                             .navigationBarBackButtonHidden(true)
